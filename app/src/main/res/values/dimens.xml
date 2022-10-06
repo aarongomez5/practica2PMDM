@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="margin_mcv">8dp</dimen>
+    <dimen name="paddind_cl">16dp</dimen>
+    <dimen name="clAncho">240dp</dimen>
+    <dimen name="tvAncho">60dp</dimen>
+    <dimen name="tvMargen">16dp</dimen>
+    <dimen name="tamañotexto">16dp</dimen>
+    <dimen name="tamañonombre">38dp</dimen>
+    <dimen name="Imagen">75dp</dimen>
+</resources>

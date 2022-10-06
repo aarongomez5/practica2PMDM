@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Practica_1</string>
+    <string name="alexelcapo">Alexelcapo</string>
+    <string name="textoalex">Es conocido por pagar carreteras y tener cabeza.</string>
+    <string name="wiki">Ver más</string>
+    <string name="knekro">Knekro</string>
+    <string name="textoknekro">Es un señor mayor y con dinero.</string>
+    <string name="juja">Juja</string>
+    <string name="textojuja">Es calvo y habla portugues. Dice mucho manin.</string>
+    <string name="illo">Illojuan</string>
+    <string name="textoillo">Es de fuengirola y tiene un bocata de lomo como menú.</string>
+    <string name="action_settings">Práctica 1</string>
+</resources>
