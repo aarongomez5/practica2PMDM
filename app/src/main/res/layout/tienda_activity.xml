@@ -9,7 +9,7 @@
     tools:context=".ScrollingActivity">
 
     <include
-        android:id="@+id/content"
-        layout="@layout/content_scrolling" />
+        android:id="@+id/tienda"
+        layout="@layout/tienda_scrolling" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

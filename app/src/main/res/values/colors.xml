@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="CLcolor">#6CBCE7</color>
     <color name="rojo">#FF0000</color>
+    <color name="fondo">#2B2929</color>
 </resources>

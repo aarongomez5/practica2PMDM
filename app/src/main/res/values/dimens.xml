@@ -5,9 +5,13 @@
     <dimen name="margin_mcv">8dp</dimen>
     <dimen name="paddind_cl">16dp</dimen>
     <dimen name="clAncho">240dp</dimen>
-    <dimen name="tvAncho">60dp</dimen>
+    <dimen name="tvAncho">35dp</dimen>
     <dimen name="tvMargen">16dp</dimen>
-    <dimen name="tamañotexto">16dp</dimen>
-    <dimen name="tamañonombre">38dp</dimen>
-    <dimen name="Imagen">75dp</dimen>
+    <dimen name="tamañonombre">20dp</dimen>
+    <dimen name="Imagen">0dp</dimen>
+    <dimen name="tamañodir">14dp</dimen>
+    <dimen name="ctMargen">130dp</dimen>
+    <dimen name="Cabecera">100dp</dimen>
+    <dimen name="tamañovolver">10dp</dimen>
+    <dimen name="boton">75dp</dimen>
 </resources>

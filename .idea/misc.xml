@@ -5,8 +5,11 @@
       <map>
         <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.2375" />
         <entry key="app/src/main/res/layout-w1240dp/content_scrolling.xml" value="0.16394557823129252" />
-        <entry key="app/src/main/res/layout/activity_scrolling.xml" value="0.2713541666666667" />
+        <entry key="app/src/main/res/layout/activity_scrolling.xml" value="0.25" />
         <entry key="app/src/main/res/layout/content_scrolling.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/tienda.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/tienda_activity.xml" value="0.2713541666666667" />
+        <entry key="app/src/main/res/layout/tienda_scrolling.xml" value="0.33" />
         <entry key="app/src/main/res/menu/menu_scrolling.xml" value="0.12552083333333333" />
       </map>
     </option>

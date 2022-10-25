@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_scrolling"
+    tools:showIn="@layout/tienda_activity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ScrollingActivity">
@@ -12,10 +12,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/black">
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/cv1"
+            android:id="@+id/cardview1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_mcv"
@@ -27,24 +28,33 @@
             android:visibility="visible">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/clelsaler"
+                android:id="@+id/adidas"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/clAncho"
-                android:background="@color/CLcolor">
+                android:background="@color/fondo">
+
+                <Button
+                    android:id="@+id/volver"
+                    android:layout_width="@dimen/boton"
+                    android:layout_height="0dp"
+                    android:text="@string/Volver"
+                    android:textSize="@dimen/tamañovolver"
+                    android:layout_marginRight="@dimen/margin_mcv"
+                    app:layout_constraintTop_toTopOf="@id/adidas"
+                    app:layout_constraintEnd_toEndOf="@id/adidas"/>
 
                 <ImageView
-                    android:id="@+id/ivFoto1"
+                    android:id="@+id/cabecera1"
                     android:layout_width="@dimen/Imagen"
-                    android:layout_height="@dimen/Imagen"
+                    android:layout_height="@dimen/Cabecera"
                     android:background="@color/rojo"
                     android:importantForAccessibility="no"
-                    app:layout_constraintEnd_toEndOf="@id/clelsaler"
-                    app:layout_constraintStart_toStartOf="@id/clelsaler"
-                    app:layout_constraintTop_toTopOf="@id/clelsaler"
-                    app:layout_constraintBottom_toBottomOf="@id/clelsaler"/>
+                    app:layout_constraintEnd_toEndOf="@id/adidas"
+                    app:layout_constraintStart_toStartOf="@id/adidas"
+                    app:layout_constraintTop_toTopOf="@id/adidas"/>
 
                 <TextView
-                    android:id="@+id/direccionsaler"
+                    android:id="@+id/desadidas"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/tvAncho"
                     android:textSize="@dimen/tamañodir"
@@ -52,31 +62,21 @@
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     android:layout_marginLeft="@dimen/tvMargen"
-                    app:layout_constraintBottom_toBottomOf="@id/ivFoto1"
-                    app:layout_constraintStart_toStartOf="@id/ivFoto1"/>
+                    app:layout_constraintTop_toBottomOf="@id/nomadidas"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
 
                 <TextView
-                    android:id="@+id/nombresaler"
+                    android:id="@+id/nomadidas"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/tvAncho"
                     android:textSize="@dimen/tamañonombre"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textStyle="bold"
-                    android:layout_marginLeft="@dimen/tvMargen"
-                    app:layout_constraintBottom_toTopOf="@id/direccionsaler"
-                    app:layout_constraintStart_toStartOf="@id/ivFoto1"/>
-
-                <TextView
-                    android:id="@+id/tiendassaler"
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/tvAncho"
-                    android:textSize="@dimen/tamañonombre"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"
-                    android:layout_marginRight="@dimen/tvMargen"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="@dimen/margin_mcv"
+                    app:layout_constraintTop_toBottomOf="@id/cabecera1"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -84,7 +84,7 @@
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/cv2"
+            android:id="@+id/cardview2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_mcv"
@@ -96,24 +96,23 @@
             android:visibility="visible">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/clarena"
+                android:id="@+id/zara"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/clAncho"
-                android:background="@color/CLcolor">
+                android:background="@color/fondo">
 
                 <ImageView
-                    android:id="@+id/ivFoto2"
+                    android:id="@+id/cabecera2"
                     android:layout_width="@dimen/Imagen"
-                    android:layout_height="@dimen/Imagen"
+                    android:layout_height="@dimen/Cabecera"
                     android:background="@color/rojo"
                     android:importantForAccessibility="no"
-                    app:layout_constraintEnd_toEndOf="@id/clarena"
-                    app:layout_constraintStart_toStartOf="@id/clarena"
-                    app:layout_constraintTop_toTopOf="@id/clarena"
-                    app:layout_constraintBottom_toBottomOf="@id/clarena"/>
+                    app:layout_constraintEnd_toEndOf="@id/zara"
+                    app:layout_constraintStart_toStartOf="@id/zara"
+                    app:layout_constraintTop_toTopOf="@id/zara"/>
 
                 <TextView
-                    android:id="@+id/direccionarena"
+                    android:id="@+id/deszara"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/tvAncho"
                     android:textSize="@dimen/tamañodir"
@@ -121,31 +120,21 @@
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     android:layout_marginLeft="@dimen/tvMargen"
-                    app:layout_constraintBottom_toBottomOf="@id/ivFoto2"
-                    app:layout_constraintStart_toStartOf="@id/ivFoto2"/>
+                    app:layout_constraintTop_toBottomOf="@id/nomzara"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
 
                 <TextView
-                    android:id="@+id/nombrearena"
+                    android:id="@+id/nomzara"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/tvAncho"
                     android:textSize="@dimen/tamañonombre"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textStyle="bold"
-                    android:layout_marginLeft="@dimen/tvMargen"
-                    app:layout_constraintBottom_toTopOf="@id/direccionarena"
-                    app:layout_constraintStart_toStartOf="@id/ivFoto2"/>
-
-                <TextView
-                    android:id="@+id/tiendasarena"
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/tvAncho"
-                    android:textSize="@dimen/tamañonombre"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"
-                    android:layout_marginRight="@dimen/tvMargen"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="@dimen/margin_mcv"
+                    app:layout_constraintTop_toBottomOf="@id/cabecera2"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -153,7 +142,7 @@
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/cv3"
+            android:id="@+id/cardview3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_mcv"
@@ -165,24 +154,23 @@
             android:visibility="visible">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/clturia"
+                android:id="@+id/game"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/clAncho"
-                android:background="@color/CLcolor">
+                android:background="@color/fondo">
 
                 <ImageView
-                    android:id="@+id/ivFoto3"
+                    android:id="@+id/cabecera3"
                     android:layout_width="@dimen/Imagen"
-                    android:layout_height="@dimen/Imagen"
+                    android:layout_height="@dimen/Cabecera"
                     android:background="@color/rojo"
                     android:importantForAccessibility="no"
-                    app:layout_constraintEnd_toEndOf="@id/clturia"
-                    app:layout_constraintStart_toStartOf="@id/clturia"
-                    app:layout_constraintTop_toTopOf="@id/clturia"
-                    app:layout_constraintBottom_toBottomOf="@id/clturia"/>
+                    app:layout_constraintEnd_toEndOf="@id/game"
+                    app:layout_constraintStart_toStartOf="@id/game"
+                    app:layout_constraintTop_toTopOf="@id/game"/>
 
                 <TextView
-                    android:id="@+id/direccionturia"
+                    android:id="@+id/desgame"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/tvAncho"
                     android:textSize="@dimen/tamañodir"
@@ -190,31 +178,21 @@
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     android:layout_marginLeft="@dimen/tvMargen"
-                    app:layout_constraintBottom_toBottomOf="@id/ivFoto3"
-                    app:layout_constraintStart_toStartOf="@id/ivFoto3"/>
+                    app:layout_constraintTop_toBottomOf="@id/nomgame"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
 
                 <TextView
-                    android:id="@+id/nombreturia"
+                    android:id="@+id/nomgame"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/tvAncho"
                     android:textSize="@dimen/tamañonombre"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textStyle="bold"
-                    android:layout_marginLeft="@dimen/tvMargen"
-                    app:layout_constraintBottom_toTopOf="@id/direccionturia"
-                    app:layout_constraintStart_toStartOf="@id/ivFoto3"/>
-
-                <TextView
-                    android:id="@+id/tiendasturia"
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/tvAncho"
-                    android:textSize="@dimen/tamañonombre"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"
-                    android:layout_marginRight="@dimen/tvMargen"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="@dimen/margin_mcv"
+                    app:layout_constraintTop_toBottomOf="@id/cabecera3"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -222,7 +200,7 @@
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/cv4"
+            android:id="@+id/cardview4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_mcv"
@@ -234,24 +212,23 @@
             android:visibility="visible">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/claqua"
+                android:id="@+id/carrefour"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/clAncho"
-                android:background="@color/CLcolor">
+                android:background="@color/fondo">
 
                 <ImageView
-                    android:id="@+id/ivFoto4"
+                    android:id="@+id/cabecera4"
                     android:layout_width="@dimen/Imagen"
-                    android:layout_height="@dimen/Imagen"
+                    android:layout_height="@dimen/Cabecera"
                     android:background="@color/rojo"
                     android:importantForAccessibility="no"
-                    app:layout_constraintEnd_toEndOf="@id/claqua"
-                    app:layout_constraintStart_toStartOf="@id/claqua"
-                    app:layout_constraintTop_toTopOf="@id/claqua"
-                    app:layout_constraintBottom_toBottomOf="@id/claqua"/>
+                    app:layout_constraintEnd_toEndOf="@id/carrefour"
+                    app:layout_constraintStart_toStartOf="@id/carrefour"
+                    app:layout_constraintTop_toTopOf="@id/carrefour"/>
 
                 <TextView
-                    android:id="@+id/direccionaqua"
+                    android:id="@+id/descarrefour"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/tvAncho"
                     android:textSize="@dimen/tamañodir"
@@ -259,36 +236,28 @@
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     android:layout_marginLeft="@dimen/tvMargen"
-                    app:layout_constraintBottom_toBottomOf="@id/ivFoto4"
-                    app:layout_constraintStart_toStartOf="@id/ivFoto4"/>
+                    app:layout_constraintTop_toBottomOf="@id/nomcarrefour"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
 
                 <TextView
-                    android:id="@+id/nombreaqua"
+                    android:id="@+id/nomcarrefour"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/tvAncho"
                     android:textSize="@dimen/tamañonombre"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textStyle="bold"
-                    android:layout_marginLeft="@dimen/tvMargen"
-                    app:layout_constraintBottom_toTopOf="@id/direccionaqua"
-                    app:layout_constraintStart_toStartOf="@id/ivFoto4"/>
-
-                <TextView
-                    android:id="@+id/tiendasaqua"
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/tvAncho"
-                    android:textSize="@dimen/tamañonombre"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"
-                    android:layout_marginRight="@dimen/tvMargen"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="@dimen/margin_mcv"
+                    app:layout_constraintTop_toBottomOf="@id/cabecera4"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </com.google.android.material.card.MaterialCardView>
+
+
 
     </LinearLayout>
 
